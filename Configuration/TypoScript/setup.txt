@@ -1,0 +1,16 @@
+plugin.tx_trbcediv {
+	view {
+		templateRootPath = {$plugin.tx_trbcediv.view.templateRootPath}
+		partialRootPath = {$plugin.tx_trbcediv.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_trbcediv.view.layoutRootPath}
+	}
+}
+
+tt_content.div >
+tt_content.div = USER
+tt_content.div {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	vendorName = TRB
+	extensionName = TrbCeDiv
+	pluginName = div
+}
